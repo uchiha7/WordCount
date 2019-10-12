@@ -20,9 +20,10 @@ namespace wordcount
             Dictionary<string, int> frequencies = function.wordcount.Countword();
             Dictionary<string, int> dic1Asc = frequencies.OrderBy(o => o.Key).ToDictionary(o => o.Key, p => p.Value);
             int sum = function.wordcount.sum1(dic1Asc);
-            Console.WriteLine("字符数:"+asccount. agefile());
-            Console.WriteLine("单词总数:" + sum);
-            Console.WriteLine("行数:"+linescount. lines());
+            Console.WriteLine("characters:" + asccount. agefile());
+            Console.WriteLine("words:" + sum);
+            Console.WriteLine("lines:" + linescount. lines());
+            Console.WriteLine("频率最高的10个单词:" );
             int temp=0;
             Dictionary<string, int> dic1Asc1 = frequencies.OrderByDescending(o => o.Value).ThenBy(o => o.Key).ToDictionary(o => o.Key, p => p.Value);
             foreach (KeyValuePair<string, int> entry in dic1Asc1)

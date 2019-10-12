@@ -12,18 +12,17 @@ namespace wordcount.function
     {
         public  static int sum1(Dictionary<string, int> dic1Asc)
         {
-            StreamWriter sw1 = new StreamWriter(@"D:\xe.txt");
+            StreamWriter sw = new StreamWriter(@"F:\WordFile.txt");
             int sum = 0;
             foreach (KeyValuePair<string, int> entry in dic1Asc)
             {
 
                 string word = entry.Key;
                 int frequency = entry.Value;
-                sw1.Write(word + "\r\n");
+                sw.Write(word + "\r\n");
                 sum = sum + frequency;
-
             }
-            sw1.Close();
+            sw.Close();
             return sum;
         }
         public static Dictionary<string, int> Countword()

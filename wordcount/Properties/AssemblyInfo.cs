@@ -19,9 +19,6 @@ using System.Runtime.InteropServices;
 //请将此类型的 ComVisible 特性设置为 true。
 [assembly: ComVisible(false)]
 
-// 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("81c0dbe5-73a4-40b3-912a-5700a90ce919")]
-
 // 程序集的版本信息由下列四个值组成: 
 //
 //      主版本

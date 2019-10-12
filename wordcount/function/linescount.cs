@@ -13,7 +13,6 @@ namespace wordcount.function
 
         public static int lines()//统计文件中的行数
         {
-           
             string str = File.ReadAllText(@path.s);
             int nr = Regex.Matches(str, @"\r").Count + 1;
             return nr;
